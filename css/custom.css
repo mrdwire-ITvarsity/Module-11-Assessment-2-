@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+
+}
+
+.offset:before {
+    display: block;
+    content: "";
+    height: 4rem;
+    margin-top: -4rem;
+}
+
+.clearfix {
+    zoom: 1
+}
+
+.clearfix:after {
+
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: 0;
+}
+
+/*====================== Navigation =====================================*/
+
+.navbar {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+
+}
+
+.navbar-nav li {
+    margin-top: .5rem;
+    margin-right: 3.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #1ebba3;
+}
+
+.navbar-nav li a:link,
+.navbar-nav li a:visited {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li a:active {
+    border-top: 2px solid #d89d19;
+    border-bottom: 2px solid #ff60e0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+/*===================================== Start of Landing Page =====================================*/
+
+
+#logo {
+    position: absolute;
+    width: 20rem;
+    margin-left: -500px;
+    margin-top: 70px;
+}
+
+#headshot {
+    width: 50%;
+    padding-bottom: 2rem;
+    border-radius: 25%;
+}
+
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 55%;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.caption h1 {
+    text-align: justify;
+    transform: translate(4%, 70%);
+    text-shadow: .1rem .1rem .5rem black;
+}
+
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.8)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    background-attachment: fixed;
+
+}
+
+.section-divider {
+    margin: 2rem 0;
+}
+
+.section-divider1 {
+    color: black;
+    margin: 2rem 0;
+}
+
+/*=========================== ABOUT ME & HEADINGS/PARAGRAPHS ===============================*/
+
+.jumbotron-fluid {
+    background-color: rgba(230, 230, 245, 0.23);
+}
+
+.heading {
+    padding-top: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+
+.about-hr {
+    border-top: .07rem solid #1ebba3;
+}
+
+.p1,
+.p2 {
+    text-align: left;
+    margin-left: 20px;
+
+}
+
+.p1 {
+    margin-top: 5rem;
+}
+
+.p3 {
+    margin-top: 5rem;
+    text-align: justify-all;
+}
+
+.p5 {
+    margin-top: 2rem;
+    font-size: 25px;
+}
+
+h3 {
+    font-weight: 700;
+    padding-top: 2rem;
+    font-size: 25px;
+}
+
+#centre1 {
+    margin-top: 10rem;
+}
+
+#centre {
+    margin-top: 3rem;
+}
+
+.drop {
+    margin-top: 10rem;
+}
+
+/*=========================== FEATURES ===============================*/
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+}
+
+/*=========================== GALLERY ===============================*/
+
+ 
+.gallery {
+    padding: 0;
+}
+
+.gallery-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.gallery-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.gallery-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.gallery-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.gallery-photo img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+
+
+.heading-underline {
+    width: 5rem;
+    height: .2rem;
+    background-color: #1ebba3;
+    margin: 0 auto 2rem;
+
+}
+
+.heading-sub {
+    padding-bottom: 2rem;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+/*=========================== REVIEW ===============================*/
+
+.write-up {
+    width: 90%;
+    padding: 10px 0;
+}
+
+.must {
+    width: 80%;
+    padding-top: 1rem;
+}
+
+#bc {
+    background-color: rgba(209, 209, 209, 0.15);
+}
+
+#logo-1 {
+    width: 60%;
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: #40474e;
+    color: white;
+    padding: 2rem 0 .5rem;
+    margin-top: 1rem;
+}
+
+footer a {
+    color: white;
+    font-size: 200%;
+    padding-left: .5rem;
+}
+
+footer svg.svg-inline--fa {
+    font-size: 1.6rem;
+    margin: 1.2rem .5rem 0 0;
+}
+
+footer svg.svg-inline--fa:hover {
+    color: #1ebba3 !important;
+}
+
+hr.socket {
+    width: 100%;
+    border-top: .2rem solid #666b71;
+    margin-top: 2rem;
+
+}
+
+
+/*===================================== Start of Media Queries =====================================*/
+
+@media (max-width:767px) {
+
+    .caption h1 {
+        font-size: 2rem;
+        letter-spacing: .15rem;
+        padding-bottom: .2rem;
+    }
+
+    .caption h3 {
+        font-size: 1.2rem;
+        padding: 1.2rem;
+    }
+
+    #logo {
+        position: absolute;
+        width: 15rem;
+        margin-left: -320px;
+        margin-top: 70px;
+    }
+
+    #logo-1 {
+        width: 15rem
+    }
+
+    .p1 {
+        margin-top: 1rem;
+        text-align:left;
+
+    }
+
+    #centre {
+        margin-top: 2rem;
+    }
+
+    #centre1 {
+        margin-top: .5rem;
+    }
+
+    .drop {
+        margin-top: 2rem;
+    }
+    
+    #spring{
+        width: 50%;
+    }
+    
+    #flag{
+        width: 50%;
+    }
+    
+    #headshot {
+        width: 30%;
+    }
+
+}
+
+
+
